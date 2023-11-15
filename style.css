@@ -143,4 +143,10 @@ text-align: center;
 .navegadorLista li a {
     color: beige;
 }
+.card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    font-size: x-large;
+}
 }
