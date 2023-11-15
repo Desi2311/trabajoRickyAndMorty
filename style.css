@@ -1,0 +1,136 @@
+body {
+    background-image: url(img/fondo.png)
+}
+
+* {
+    font-family: cursive;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    /*background-color: black;*/
+    
+}
+
+.navegadorLista{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navegadorLista li a {
+    text-decoration: none;
+   color: #7F2CCB;
+   font-size: 20px;
+}
+
+.abrirMenu,
+.cerrarMenu {
+    display: none;
+}
+
+
+.textoPagina{
+    text-align: center;
+}
+
+.card{
+    background-color:#e4a788;
+    color: #44281d;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    max-width: 280px;
+    height: 480px;
+    text-align: center;
+    font-size:smaller;
+    justify-content: center;
+    box-shadow: 1px 10px 31px 8px rgba(240,225,74,0.29);
+-webkit-box-shadow: 1px 10px 31px 8px rgba(240,225,74,0.29);
+-moz-box-shadow: 1px 10px 31px 8px rgba(240,225,74,0.29);
+}
+
+.card:hover{
+    scale: 1.4;
+    opacity: 90%;
+}
+
+
+.personajes-container {
+    align-items: center;
+    list-style: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.container-paginador {
+/* border: solid 2px yellow;*/
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+button{
+    color: green;
+    font-size: 20px;
+    background-color: black;
+}
+
+#prev-page , #next-page {
+    font-size: 30px 30px;
+}
+.botonVerMas {
+    background-color: #44281d;
+    color: #97ce4c ;  
+}
+
+footer{
+text-align: center;
+}
+
+@media screen and (max-width: 630px) {
+.abrirMenu,
+.cerrarMenu {
+    display: block;
+    }
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+}
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.navegadorLista {
+    flex-direction: column;
+    align-items: end;
+}
+
+.navegadorLista li a {
+    color: beige;
+}
+}
