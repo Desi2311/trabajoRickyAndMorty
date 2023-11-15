@@ -24,10 +24,15 @@ header{
     gap: 1rem;
 }
 
+.navegadorLista :hover {
+    background-color: black;
+    border-radius: 100%;
+
+}
 .navegadorLista li a {
-    text-decoration: none;
-   color: #7F2CCB;
-   font-size: 20px;
+text-decoration: none;
+color: #7F2CCB;
+font-size: 20px;
 }
 
 .abrirMenu,
@@ -95,6 +100,7 @@ button{
 
 footer{
 text-align: center;
+
 }
 
 @media screen and (max-width: 630px) {
@@ -128,6 +134,10 @@ text-align: center;
 .navegadorLista {
     flex-direction: column;
     align-items: end;
+}
+.navegadorLista :hover{
+    background-color: #97ce4c ;
+    border-radius: 100%;
 }
 
 .navegadorLista li a {
